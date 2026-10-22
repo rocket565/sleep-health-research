@@ -542,7 +542,6 @@
     });
   }
 
-<<<<<<< HEAD
   /* ---------- 分析页：问卷调查分析 ---------- */
   var SLEEP_MIDPOINTS = {
     "23:00-23:30": 23.25,
@@ -826,8 +825,6 @@
     if ($("#lightbox")) bindLightbox();
   }
 
-=======
->>>>>>> 1be92cd3d584e46aab91fd2a6fcf824505530e34
   window.Render = {
     home: home,
     interviewList: interviewList,
@@ -838,10 +835,7 @@
     insights: insights,
     gallery: gallery,
     members: members,
-<<<<<<< HEAD
     analysis: analysis,
-=======
->>>>>>> 1be92cd3d584e46aab91fd2a6fcf824505530e34
     bindLightbox: bindLightbox,
     openLightbox: openLightbox,
     stats: stats

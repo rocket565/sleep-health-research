@@ -1613,7 +1613,6 @@ td.id {
   font-size: 0.8rem;
 }
 
-<<<<<<< HEAD
 /* ---------- 7.5 分析页（问卷分析 / 亲和图） ---------- */
 .finding {
   margin-bottom: 22px;
@@ -1793,8 +1792,6 @@ td.id {
   border-left: 3px solid rgba(138, 180, 255, 0.5);
 }
 
-=======
->>>>>>> 1be92cd3d584e46aab91fd2a6fcf824505530e34
 /* ---------- 8. 团队 / 页脚 ---------- */
 .member {
   display: flex;
