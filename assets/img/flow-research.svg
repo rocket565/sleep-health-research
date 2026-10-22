@@ -1,0 +1,58 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 630" width="1120" height="630" role="img" aria-labelledby="fr-title fr-desc">
+  <title id="fr-title">研究流程示意图</title>
+  <desc id="fr-desc">四个步骤：问题界定、4 场深度访谈、12 份问卷、归纳洞察。</desc>
+  <defs>
+    <linearGradient id="fr-glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ab4ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#b79bff" stop-opacity="0.05"/>
+    </linearGradient>
+    <marker id="fr-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8ab4ff" fill-opacity="0.7"/>
+    </marker>
+    <style>
+      .card{fill:rgba(255,255,255,0.045);stroke:rgba(150,175,255,0.28);stroke-width:1.5}
+      .num{fill:#8ab4ff;font:600 15px/1 'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif;letter-spacing:2px}
+      .ttl{fill:#e8edff;font:600 22px 'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif}
+      .desc{fill:#9fb0d8;font:400 13px 'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif}
+      .flow{stroke:#8ab4ff;stroke-opacity:0.55;stroke-width:1.6;stroke-dasharray:5 5}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1120" height="630" fill="url(#fr-glow)" rx="24"/>
+
+  <g transform="translate(0,115)">
+  <rect class="card" x="28" y="128" width="228" height="148" rx="18"/>
+  <text class="num" x="52" y="166">01</text>
+  <text class="ttl" x="52" y="200">问题界定</text>
+  <text class="desc" x="52" y="230">长期熬夜与睡眠拖延</text>
+  <text class="desc" x="52" y="252">如何相互强化</text>
+
+  <line class="flow" x1="266" y1="202" x2="306" y2="202" marker-end="url(#fr-arrow)"/>
+
+  <!-- 02 -->
+  <rect class="card" x="316" y="128" width="228" height="148" rx="18"/>
+  <text class="num" x="340" y="166">02</text>
+  <text class="ttl" x="340" y="200">深度访谈 ×4</text>
+  <text class="desc" x="340" y="230">半结构化 · 20–30 分钟</text>
+  <text class="desc" x="340" y="252">三组主题追问</text>
+
+  <line class="flow" x1="554" y1="202" x2="594" y2="202" marker-end="url(#fr-arrow)"/>
+
+  <!-- 03 -->
+  <rect class="card" x="604" y="128" width="228" height="148" rx="18"/>
+  <text class="num" x="628" y="166">03</text>
+  <text class="ttl" x="628" y="200">问卷 ×12</text>
+  <text class="desc" x="628" y="230">10 道题项</text>
+  <text class="desc" x="628" y="252">验证分布与偏好</text>
+
+  <line class="flow" x1="842" y1="202" x2="882" y2="202" marker-end="url(#fr-arrow)"/>
+
+  <!-- 04 -->
+  <rect class="card" x="892" y="128" width="200" height="148" rx="18"/>
+  <text class="num" x="916" y="166">04</text>
+  <text class="ttl" x="916" y="200">归纳洞察</text>
+  <text class="desc" x="916" y="230">两类拖延 · 提醒分歧</text>
+  <text class="desc" x="916" y="252">数据与隐私</text>
+  <text class="num" x="28" y="72">RESEARCH FLOW</text>
+  </g>
+</svg>
