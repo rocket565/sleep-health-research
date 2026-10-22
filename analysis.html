@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>分析结果 · 问卷与亲和图 · 二十二载</title>
+  <meta name="description" content="12 份问卷的描述性统计、交叉分析与关键发现，以及 4 位受访者访谈的亲和图过程与 6 个顶层主题。">
+  <meta name="theme-color" content="#070b16">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%23ffd9a0'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark"){document.documentElement.dataset.theme=t;}}catch(e){}</script>
+</head>
+<body data-page="analysis">
+  <a class="skip" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="moon" aria-hidden="true"></span>二十二载 · 睡眠调研</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="project.html">项目</a>
+        <a href="interviews.html">访谈</a>
+        <a href="survey.html">问卷</a>
+        <a href="analysis.html" aria-current="page">分析</a>
+        <a href="gallery.html">图片</a>
+        <a href="about.html">关于</a>
+      </nav>
+      <a class="nav-cta" href="https://jcn5ed29kssw.feishu.cn/wiki/BGQNwgcjriKNrokeprqc2rw8nEc" target="_blank" rel="noopener">飞书文档 ↗</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到日间主题" title="切换到日间主题" aria-pressed="false">&#9788;</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="面包屑">
+          <a href="index.html">首页</a><span class="sep">/</span><span>分析</span>
+        </nav>
+        <p class="kicker">Analysis</p>
+        <h1>从数据到主题</h1>
+        <p class="lead">
+          问卷回答「有多少」，访谈回答「为什么」。这一页把两部分分析放在一起：
+          12 份问卷的描述性统计与交叉分析，和 4 场访谈的亲和图（64 张便利贴 → 7 个临时簇 → 6 个顶层主题）。
+        </p>
+        <div class="pill-row">
+          <span class="tag tag--teal">12 份问卷</span>
+          <span class="tag">4 场深访</span>
+          <span class="tag">64 张便利贴</span>
+          <span class="tag">6 个顶层主题</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="tabs" role="tablist" aria-label="分析模块">
+          <button class="tab" id="tab-survey" role="tab" aria-selected="true" aria-controls="panel-survey" tabindex="0">问卷分析</button>
+          <button class="tab" id="tab-affinity" role="tab" aria-selected="false" aria-controls="panel-affinity" tabindex="-1">亲和图</button>
+        </div>
+
+        <!-- 模块一：问卷分析 -->
+        <section class="tabpanel" id="panel-survey" role="tabpanel" aria-labelledby="tab-survey" tabindex="0">
+          <div class="grid grid--2" style="margin-bottom:26px">
+            <article class="card card--flat">
+              <h2 style="font-size:1.1rem;margin-bottom:12px">样本与人口统计</h2>
+              <div data-demo-chart></div>
+              <div data-demo-facts style="margin-top:14px"></div>
+            </article>
+            <article class="card card--flat">
+              <h2 style="font-size:1.1rem;margin-bottom:12px">怎么读这一页</h2>
+              <p class="muted">
+                所有图表和百分比都由 12 份原始问卷实时计算（数据在 <code>assets/data/survey.js</code>），
+                改动一行问卷，图会跟着变。
+              </p>
+              <div class="avg-chip">
+                <span>近似平均入睡时间</span>
+                <b data-avg-sleep>--:--</b>
+                <span class="muted">按区间中点加权</span>
+              </div>
+              <p class="note" style="margin-top:14px">
+                中位类别落在 00:00–01:00；23:00–02:00 的五个时段都有分布。
+              </p>
+            </article>
+          </div>
+
+          <div class="section-head" style="margin-bottom:18px">
+            <p class="kicker">Findings</p>
+            <h2 style="font-size:1.35rem">四个关键发现</h2>
+          </div>
+          <div data-findings></div>
+
+          <article class="card learned-card" style="margin-top:10px">
+            <h2 style="font-size:1.1rem;margin-bottom:12px">我们学到了什么（问卷部分）</h2>
+            <div data-learned-survey></div>
+          </article>
+          <noscript><p class="callout">这一页的图表需要 JavaScript 渲染。</p></noscript>
+        </section>
+
+        <!-- 模块二：亲和图 -->
+        <section class="tabpanel" id="panel-affinity" role="tabpanel" aria-labelledby="tab-affinity" tabindex="0" hidden>
+          <article class="card card--flat" style="margin-bottom:24px">
+            <h2 style="font-size:1.1rem;margin-bottom:10px">做法</h2>
+            <p class="muted" style="margin:0">
+              原始数据来自 4 位用户的深度访谈。我们把访谈记录拆成 64 张原子化便利贴（每张只保留一个意思，删掉重复），
+              先按受访者着色摊开，再按语义相近聚类，最后提炼主题。下面三张图对应三个阶段，点击可以放大。
+            </p>
+          </article>
+
+          <div data-affinity-steps></div>
+
+          <div class="section-head" style="margin:10px 0 18px">
+            <p class="kicker">Themes</p>
+            <h2 style="font-size:1.35rem">6 个顶层主题</h2>
+            <p>7 个临时簇合并成 6 个主题，唯一被合并的是「身体反馈」——它只有 4 张，且每条都由屏幕内容触发。</p>
+          </div>
+          <div class="grid grid--3" data-affinity-themes></div>
+
+          <article class="card learned-card" style="margin-top:26px">
+            <h2 style="font-size:1.1rem;margin-bottom:12px">我们学到了什么（访谈部分）</h2>
+            <p class="learned" data-learned-affinity></p>
+          </article>
+
+          <div class="section-head" style="margin:34px 0 16px">
+            <p class="kicker">Contribution</p>
+            <h2 style="font-size:1.2rem">贡献说明</h2>
+          </div>
+          <div class="grid grid--2" data-contributions></div>
+          <noscript><p class="callout">亲和图内容需要 JavaScript 渲染。</p></noscript>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="lightbox" class="lightbox" aria-label="图片预览">
+    <img id="lb-img" alt="">
+    <div class="lb-bar">
+      <span id="lb-count"></span>
+      <span id="lb-cap"></span>
+      <span class="spacer"></span>
+      <button class="icon-btn" id="lb-prev" type="button" aria-label="上一张">←</button>
+      <button class="icon-btn" id="lb-next" type="button" aria-label="下一张">→</button>
+      <button class="icon-btn" id="lb-close" type="button" aria-label="关闭">✕</button>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p><strong>二十二载</strong> · 人机交互技术课程作业 4 · 作业 5</p>
+        <p>内容来源：《作业4》访谈记录与问卷原始数据、《作业5》分析结果。仅用于课程研究展示。</p>
+        <p>更新于 2026-10-22</p>
+      </div>
+      <nav class="footer-links" aria-label="页脚导航">
+        <a href="index.html">首页</a>
+        <a href="project.html">项目</a>
+        <a href="interviews.html">访谈</a>
+        <a href="survey.html">问卷</a>
+        <a href="analysis.html">分析</a>
+        <a href="gallery.html">图片</a>
+        <a href="about.html">关于</a>
+        <a href="https://jcn5ed29kssw.feishu.cn/wiki/BGQNwgcjriKNrokeprqc2rw8nEc" target="_blank" rel="noopener">飞书项目文档 ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/data/site.js"></script>
+  <script src="assets/data/survey.js"></script>
+  <script src="assets/data/interviews.js"></script>
+  <script src="assets/data/insights.js"></script>
+  <script src="assets/data/images.js"></script>
+  <script src="assets/data/analysis.js"></script>
+  <script src="assets/js/aggregate.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+把图片放进这个文件夹，然后在 assets/data/images.js 里登记一行，图片墙就会出现。
+
+示例（images.js）：
+  {
+    file: "assets/img/gallery/访谈现场-1.jpg",
+    alt: "四位受访者与访谈提纲的合影",
+    caption: "第一次访谈结束后的合照，2025-10",
+    tag: "访谈"
+  }
+
+懒人做法：放好图片后，在站点根目录运行
+  node tools/scan_images.mjs
+它会自动把这里还没登记的图片补进清单（alt/caption 先用文件名占位，再改文案）。
+
+建议：宽度 ≤ 1600px、jpg/webp、单张 ≤ 500KB。
