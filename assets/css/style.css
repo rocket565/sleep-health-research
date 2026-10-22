@@ -1524,13 +1524,14 @@ td.id {
 
 /* 示意图 / 亲和图用 contain，避免把标题和便利贴裁掉 */
 .gallery-item--art {
-  background: #0b1122;
+  background: var(--surface);
 }
 
 .gallery-item--art img {
   aspect-ratio: 16 / 10;
   object-fit: contain;
   padding: 8px;
+  /* 只有图片区是深色底，卡片和说明文字跟着主题走 */
   background: #0b1122;
 }
 
@@ -1871,6 +1872,9 @@ td.id {
   background: rgba(10, 16, 32, 0.85);
   backdrop-filter: blur(8px);
   color: var(--text);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -2129,9 +2133,12 @@ td.id {
   background: #eef2fb;
 }
 
-/* 示意图是按深色底画的，浅色主题下仍给它深色底托 */
-:root[data-theme="light"] .gallery-item--art {
-  background: #0b1122;
+/* 回到顶部：浅色主题下换成白底深字，避免黑底黑箭头 */
+:root[data-theme="light"] .back-top {
+  background: rgba(255, 255, 255, 0.94);
+  color: #101830;
+  border-color: rgba(24, 39, 84, 0.24);
+  box-shadow: 0 8px 20px -12px rgba(20, 34, 70, 0.55);
 }
 
 @media print {

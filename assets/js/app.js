@@ -196,12 +196,9 @@
         R.surveyTable();
         if ($("[data-insights]")) R.insights("[data-insights]");
       }
-      if (page === "gallery") {
-        R.gallery();
-        R.bindLightbox();
-      }
       if (page === "about") R.members();
       if (page === "analysis") R.analysis();
+      if (page === "affinity") R.analysis();
       if (page === "project" && $("[data-insights]")) R.insights("[data-insights]");
     }
 

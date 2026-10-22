@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -22,7 +22,7 @@
         <a href="interviews.html">访谈</a>
         <a href="survey.html">问卷</a>
         <a href="analysis.html" aria-current="page">分析</a>
-        <a href="gallery.html">图片</a>
+        <a href="affinity.html">亲和图</a>
         <a href="about.html">关于</a>
       </nav>
       <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到日间主题" title="切换到日间主题" aria-pressed="false">&#9788;</button>
@@ -36,37 +36,31 @@
           <a href="index.html">首页</a><span class="sep">/</span><span>分析</span>
         </nav>
         <p class="kicker">Analysis</p>
-        <h1>从数据到主题</h1>
+        <h1>12 份答卷说清楚了什么</h1>
         <p class="lead">
-          问卷回答「有多少」，访谈回答「为什么」。这一页把两部分分析放在一起：
-          12 份问卷的描述性统计与交叉分析，和 4 场访谈的亲和图（64 张便利贴 → 7 个临时簇 → 6 个顶层主题）。
+          访谈里那些「我觉得」，需要数字来验证。12 份答卷不够代表所有人，但能看出倾向：
+          大家几点睡、拖延到什么程度、睡前在看什么，以及在提醒方式和隐私上分歧有多大。
         </p>
         <div class="pill-row">
-          <span class="tag tag--teal">12 份问卷</span>
-          <span class="tag">4 场深访</span>
-          <span class="tag">64 张便利贴</span>
-          <span class="tag">6 个顶层主题</span>
+          <span class="tag tag--teal">12 份有效样本</span>
+          <span class="tag">10 道题</span>
+          <span class="tag">含交叉分析</span>
         </div>
       </div>
     </section>
 
     <section class="section section--tight">
       <div class="container">
-        <div class="tabs" role="tablist" aria-label="分析模块">
-          <button class="tab" id="tab-survey" role="tab" aria-selected="true" aria-controls="panel-survey" tabindex="0">问卷分析</button>
-          <button class="tab" id="tab-affinity" role="tab" aria-selected="false" aria-controls="panel-affinity" tabindex="-1">亲和图</button>
-        </div>
-
-        <!-- 模块一：问卷分析 -->
-        <section class="tabpanel" id="panel-survey" role="tabpanel" aria-labelledby="tab-survey" tabindex="0">
+        <!-- 问卷分析 -->
+        <section id="panel-survey">
           <div class="grid grid--2" style="margin-bottom:26px">
             <article class="card card--flat">
-              <h2 style="font-size:1.1rem;margin-bottom:12px">样本与人口统计</h2>
+              <h2 style="font-size:1.1rem;margin-bottom:12px">填答的都是谁</h2>
               <div data-demo-chart></div>
               <div data-demo-facts style="margin-top:14px"></div>
             </article>
             <article class="card card--flat">
-              <h2 style="font-size:1.1rem;margin-bottom:12px">统计口径</h2>
+              <h2 style="font-size:1.1rem;margin-bottom:12px">数字怎么算的</h2>
               <p class="muted">
                 百分比按 12 人计算并四舍五入到整数，单项之和可能不等于 100%；
                 多选题按「提到该项的人数」统计，各项之和可超过 12。
@@ -89,43 +83,12 @@
           <div data-findings></div>
 
           <article class="card learned-card" style="margin-top:10px">
-            <h2 style="font-size:1.1rem;margin-bottom:12px">我们学到了什么（问卷部分）</h2>
+            <h2 style="font-size:1.1rem;margin-bottom:12px">这些数字改变了什么</h2>
             <div data-learned-survey></div>
           </article>
           <noscript><p class="callout">这一页的图表需要 JavaScript 渲染。</p></noscript>
         </section>
 
-        <!-- 模块二：亲和图 -->
-        <section class="tabpanel" id="panel-affinity" role="tabpanel" aria-labelledby="tab-affinity" tabindex="0" hidden>
-          <article class="card card--flat" style="margin-bottom:24px">
-            <h2 style="font-size:1.1rem;margin-bottom:10px">做法</h2>
-            <p class="muted" style="margin:0">
-              原始数据来自 4 位用户的深度访谈。我们把访谈记录拆成 64 张原子化便利贴（每张只保留一个意思，删掉重复），
-              先按受访者着色摊开，再按语义相近聚类，最后提炼主题。下面三张图对应三个阶段，点击可以放大。
-            </p>
-          </article>
-
-          <div data-affinity-steps></div>
-
-          <div class="section-head" style="margin:10px 0 18px">
-            <p class="kicker">Themes</p>
-            <h2 style="font-size:1.35rem">6 个顶层主题</h2>
-            <p>7 个临时簇合并成 6 个主题，唯一被合并的是「身体反馈」——它只有 4 张，且每条都由屏幕内容触发。</p>
-          </div>
-          <div class="grid grid--3" data-affinity-themes></div>
-
-          <article class="card learned-card" style="margin-top:26px">
-            <h2 style="font-size:1.1rem;margin-bottom:12px">我们学到了什么（访谈部分）</h2>
-            <p class="learned" data-learned-affinity></p>
-          </article>
-
-          <div class="section-head" style="margin:34px 0 16px">
-            <p class="kicker">Contribution</p>
-            <h2 style="font-size:1.2rem">贡献说明</h2>
-          </div>
-          <div class="grid grid--2" data-contributions></div>
-          <noscript><p class="callout">亲和图内容需要 JavaScript 渲染。</p></noscript>
-        </section>
       </div>
     </section>
   </main>
@@ -155,7 +118,7 @@
         <a href="interviews.html">访谈</a>
         <a href="survey.html">问卷</a>
         <a href="analysis.html">分析</a>
-        <a href="gallery.html">图片</a>
+        <a href="affinity.html">亲和图</a>
         <a href="about.html">关于</a>
       </nav>
     </div>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>图片 · 方法与素材 · 二十二载</title>
-  <meta name="description" content="研究流程、访谈主题模型等示意图；后续补充的访谈现场与界面草图也会出现在这里。">
+  <title>亲和图 · 二十二载</title>
+  <meta name="description" content="4 场深度访谈拆成 64 张便利贴，经两轮聚类归纳为 6 个顶层主题；含三阶段过程图与结论。">
   <meta name="theme-color" content="#070b16">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%23ffd9a0'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/css/style.css">
   <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark"){document.documentElement.dataset.theme=t;}}catch(e){}</script>
 </head>
-<body data-page="gallery">
+<body data-page="affinity">
   <a class="skip" href="#main">跳到主要内容</a>
 
   <header class="site-header">
@@ -22,7 +22,7 @@
         <a href="interviews.html">访谈</a>
         <a href="survey.html">问卷</a>
         <a href="analysis.html">分析</a>
-        <a href="gallery.html" aria-current="page">图片</a>
+        <a href="affinity.html" aria-current="page">亲和图</a>
         <a href="about.html">关于</a>
       </nav>
       <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到日间主题" title="切换到日间主题" aria-pressed="false">&#9788;</button>
@@ -33,24 +33,46 @@
     <section class="page-head">
       <div class="container">
         <nav class="breadcrumb" aria-label="面包屑">
-          <a href="index.html">首页</a><span class="sep">/</span><span>图片</span>
+          <a href="index.html">首页</a><span class="sep">/</span><span>亲和图</span>
         </nav>
-        <p class="kicker">Gallery</p>
-        <h1>方法与素材</h1>
+        <p class="kicker">Affinity Diagram</p>
+        <h1>把四场访谈摊开，再归拢</h1>
         <p class="lead">
-          研究流程与访谈主题的示意图放在这里；之后补充的访谈现场照片、界面草图、便利贴墙也会加到这一页。
-          点击任意图片可以放大查看，用键盘左右方向键切换。
+          访谈里的话有 64 句是能当证据用的，我们把它们一句一张便利贴、按人分颜色贴出来，再一步步往一起归。
+          下面三张图分别是刚摊开时、第一次分组后、和最后定下来的 6 个主题。点开任意一张能放大，每张便利贴上的原话都看得清。
         </p>
       </div>
     </section>
 
     <section class="section section--tight">
       <div class="container">
-        <div class="gallery-grid" data-gallery></div>
-        <p class="callout" data-gallery-empty hidden>
-          图片还在整理中，稍后会补上访谈现场与界面草图。
+        <article class="card card--flat" style="margin-bottom:24px">
+          <h2 style="font-size:1.1rem;margin-bottom:10px">三轮走完</h2>
+          <p class="muted" style="margin:0">
+            先把 4 场访谈的录音整理成文字，挑出 64 句各自只讲一件事的话，摊在白板上不分类；
+            第一轮把意思相近的挪到一起，得到 7 个临时簇；第二轮把太细的合并、给每堆取名字，最后剩下 6 个主题。
+            整个过程没有预先定好框架，主题是归出来的，不是套上去的。
+          </p>
+        </article>
+
+        <div data-affinity-steps></div>
+
+        <div class="section-head" style="margin:26px 0 18px">
+          <p class="kicker">Themes</p>
+          <h2 style="font-size:1.35rem">最后剩下的 6 个主题</h2>
+          <p>7 个临时簇里只合并了一处：「身体反馈」那 4 张，每条都跟着屏幕内容出现，就并进了「睡前屏幕与身体反馈」。</p>
+        </div>
+        <div class="grid grid--3" data-affinity-themes></div>
+
+        <article class="card learned-card" style="margin-top:26px">
+          <h2 style="font-size:1.1rem;margin-bottom:12px">从这面墙上看出来的几件事</h2>
+          <p class="learned" data-learned-affinity></p>
+        </article>
+
+        <noscript><p class="callout">亲和图需要 JavaScript 渲染。</p></noscript>
+        <p class="note" style="margin-top:22px">
+          想自己翻一遍？原始材料在 <a href="interviews.html">访谈</a> 页，每份都有完整问答。
         </p>
-        <noscript><p class="callout">图片墙需要 JavaScript 渲染。</p></noscript>
       </div>
     </section>
   </main>
@@ -80,7 +102,7 @@
         <a href="interviews.html">访谈</a>
         <a href="survey.html">问卷</a>
         <a href="analysis.html">分析</a>
-        <a href="gallery.html">图片</a>
+        <a href="affinity.html">亲和图</a>
         <a href="about.html">关于</a>
       </nav>
     </div>
@@ -91,6 +113,7 @@
   <script src="assets/data/interviews.js"></script>
   <script src="assets/data/insights.js"></script>
   <script src="assets/data/images.js"></script>
+  <script src="assets/data/analysis.js"></script>
   <script src="assets/js/aggregate.js"></script>
   <script src="assets/js/charts.js"></script>
   <script src="assets/js/render.js"></script>
