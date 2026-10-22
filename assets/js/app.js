@@ -201,11 +201,18 @@
         R.bindLightbox();
       }
       if (page === "about") R.members();
+<<<<<<< HEAD
       if (page === "analysis") R.analysis();
       if (page === "project" && $("[data-insights]")) R.insights("[data-insights]");
     }
 
     if (page === "survey" || page === "analysis") tabs();
+=======
+      if (page === "project" && $("[data-insights]")) R.insights("[data-insights]");
+    }
+
+    if (page === "survey") tabs();
+>>>>>>> 1be92cd3d584e46aab91fd2a6fcf824505530e34
     if (page === "interview") {
       scrollSpy();
       if (window.Render) window.Render.bindLightbox();

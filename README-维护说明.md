@@ -81,11 +81,15 @@ node tools/scan_images.mjs
 | 问卷题目与选项 | `assets/data/survey.js` → `questions` |
 | 问卷每一份的答案 | `assets/data/survey.js` → `rows` |
 | 6 条洞察的文案 | `assets/data/insights.js` |
+<<<<<<< HEAD
 | 分析页的结论、亲和图说明、6 个主题 | `assets/data/analysis.js` |
+=======
+>>>>>>> 1be92cd3d584e46aab91fd2a6fcf824505530e34
 | 团队、分工、流程、链接 | `assets/data/site.js` |
 | 页面上的固定文字 | 对应的 `*.html` |
 | 颜色、字号、间距 | `assets/css/style.css` 开头的变量区 |
 
+<<<<<<< HEAD
 ### 分析页（`analysis.html`）的两个模块
 
 - **问卷分析**：人口统计、四个关键发现（含交叉表）、问卷部分结论。
@@ -99,6 +103,8 @@ node tools/scan_images.mjs
 > `data/notes.js` 是 64 张便利贴）。改完重跑那边的 `node tools/export.mjs`，
 > 再把 `out/` 里三张 PNG 覆盖到本站 `assets/img/affinity/` 的同名文件即可。
 
+=======
+>>>>>>> 1be92cd3d584e46aab91fd2a6fcf824505530e34
 ### 加一份新问卷
 
 在 `assets/data/survey.js` 的 `rows` 里复制一行，改 `id` 和字段值即可。
@@ -165,7 +171,10 @@ cloudflared tunnel --url http://127.0.0.1:4321
 ├─ interviews.html       访谈列表（4 张卡片）
 ├─ interview.html        访谈详情，读 ?id=1..4
 ├─ survey.html           问卷：设计 / 图表 / 原始数据 三个 Tab + 6 条洞察
+<<<<<<< HEAD
 ├─ analysis.html         分析：问卷分析 / 亲和图 两个 Tab（对应《作业5》）
+=======
+>>>>>>> 1be92cd3d584e46aab91fd2a6fcf824505530e34
 ├─ gallery.html          图片墙（灯箱放大）
 ├─ about.html            团队、数据来源、隐私说明
 ├─ 404.html
@@ -176,8 +185,13 @@ cloudflared tunnel --url http://127.0.0.1:4321
 │  ├─ js/charts.js       图表渲染（CSS 条形 + SVG 环形）
 │  ├─ js/render.js       把 data/ 渲染成页面元素
 │  ├─ js/app.js          导航、主题切换、Tab、灯箱、滚动动效
+<<<<<<< HEAD
 │  ├─ data/              所有内容的唯一来源（survey / interviews / insights / analysis / site / images）
 │  └─ img/               affinity/（亲和图三阶段）、gallery/（你放图的地方）
+=======
+│  ├─ data/              所有内容的唯一来源
+│  └─ img/               示意图 + gallery/（你放图的地方）
+>>>>>>> 1be92cd3d584e46aab91fd2a6fcf824505530e34
 └─ tools/
    ├─ serve.mjs          本地预览服务器
    ├─ check_site.mjs     自检
