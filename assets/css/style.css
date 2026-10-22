@@ -1522,15 +1522,15 @@ td.id {
   background: #0b1122;
 }
 
-/* 示意图（SVG）用 contain，避免把标题和箭头裁掉 */
+/* 示意图 / 亲和图用 contain，避免把标题和便利贴裁掉 */
 .gallery-item--art {
   background: #0b1122;
 }
 
 .gallery-item--art img {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
   object-fit: contain;
-  padding: 10px;
+  padding: 8px;
   background: #0b1122;
 }
 

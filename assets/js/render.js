@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
  * 页面渲染：把 data/ 里的数据变成 DOM
  * ------------------------------------------------------------
  * 所有页面共用。页面本身只留空容器 + data-* 标记，
@@ -429,7 +429,7 @@
   function galleryButton(img, list, index) {
     var btn = make("button", "gallery-item");
     btn.type = "button";
-    if (/\.svg$/i.test(img.file)) btn.classList.add("gallery-item--art");
+    if (/\.svg$/i.test(img.file) || /affinity\//.test(img.file)) btn.classList.add("gallery-item--art");
     btn.setAttribute("data-lightbox", String(list.indexOf(img)));
     btn.setAttribute("aria-label", "放大查看：" + (img.caption || img.alt));
 
